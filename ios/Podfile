@@ -1,10 +1,14 @@
 use_frameworks!
 
-platform :ios, '12.4'
+platform :ios, '13.5'
 
-install! 'cocoapods', :deterministic_uuids => false
+source 'https://github.com/touchlab/PublicPodspecs.git'
 
 target 'KaMPKitiOS' do
-    pod 'shared', :path => '../shared/'
+    if ENV.include?("LOCAL_KOTLIN_PATH")
+      pod 'shared', :path => ENV["LOCAL_KOTLIN_PATH"]
+    else
+      pod 'shared', '~> 1.2.0'
+    end
     pod 'SwiftLint'
 end
