@@ -7,6 +7,7 @@ plugins {
     id("com.android.library")
     id("com.squareup.sqldelight")
     id("co.touchlab.faktory.kmmbridge") version "0.3.1"
+    `maven-publish`
 }
 
 android {
