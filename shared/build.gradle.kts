@@ -6,6 +6,7 @@ plugins {
     kotlin("plugin.serialization")
     id("com.android.library")
     id("com.squareup.sqldelight")
+    id("co.touchlab.faktory.kmmbridge") version "0.3.1"
 }
 
 android {
@@ -28,6 +29,15 @@ android {
 }
 
 version = "1.2"
+
+kmmbridge {
+    mavenPublishArtifacts()
+    githubReleaseVersions()
+    spm()
+    // cocoapods("git@github.com:touchlab/PodSpecs.git")
+}
+
+addGithubPackagesRepository()
 
 kotlin {
     android()
