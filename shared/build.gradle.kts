@@ -35,7 +35,8 @@ kmmbridge {
     mavenPublishArtifacts()
     githubReleaseVersions()
     spm()
-    cocoapods("git@github.com:touchlab/PublicPodspecs.git")
+    // cocoapods("git@github.com:touchlab/PublicPodspecs.git")
+    versionPrefix.set("1.3")
 }
 
 addGithubPackagesRepository()
@@ -110,7 +111,7 @@ kotlin {
             isStatic = false // SwiftUI preview requires dynamic framework
         }
         ios.deploymentTarget = "12.4"
-        podfile = project.file("../ios/Podfile")
+        // podfile = project.file("../ios/Podfile")
     }
 }
 
