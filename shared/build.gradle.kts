@@ -34,9 +34,9 @@ version = "1.2"
 kmmbridge {
     mavenPublishArtifacts()
     githubReleaseVersions()
-    spm()
+    // spm()
     cocoapods("git@github.com:touchlab/PublicPodspecs.git")
-    versionPrefix.set("1.6")
+    versionPrefix.set("1.7")
 }
 
 addGithubPackagesRepository()
