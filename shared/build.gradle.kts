@@ -36,7 +36,7 @@ kmmbridge {
     githubReleaseVersions()
     spm()
     cocoapods("git@github.com:touchlab/PublicPodspecs.git")
-    versionPrefix.set("1.5")
+    versionPrefix.set("1.6")
 }
 
 addGithubPackagesRepository()
